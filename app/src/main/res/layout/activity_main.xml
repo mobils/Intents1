@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intents 1"
+        android:textSize="30sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="botó crida activitat 2"
+        android:id="@+id/b1"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        >
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="botó truca per telèfon"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+
+        android:id="@+id/b2"
+        >
+    </Button>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="text a buscar"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="botó cerca al navegador"
+
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+
+        android:id="@+id/b3"
+        >
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="botó tria contacte"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+
+        app:icon="@drawable/manage_search"
+        android:id="@+id/b4"
+        >
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="botó busca imatge a galeria"
+        app:icon="@drawable/perm_media"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:id="@+id/b5"
+        >
+    </Button>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imatgeCanvia"
+        android:src="@drawable/perm_media"
+        />
+
+</LinearLayout>

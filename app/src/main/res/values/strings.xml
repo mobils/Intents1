@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Intents1</string>
+    <string name="about">Tres en Raya. Instrucciones: En este juego se trata de conseguir colocar tu ficha en 3 posiciones en línia, horizontal, vertical o diagonal</string>
+</resources>

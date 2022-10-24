@@ -55,10 +55,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if (b.getId() == R.id.b2 )
         {
-            //truquem per telèfon : ACTION_DIAL  = ACTION_VIEW
+            //veure el telèfon :  = ACTION_VIEW
+            //per trucar = ACTION_CALL
+            //Cal el permisos al manifest
 
-            Intent intent2 = new Intent(Intent.ACTION_CALL, Uri.parse("tel:112"));
+            Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:41.2, 2.1"));
             startActivity(intent2);
+
+            //Altres URI:
+            //Uri.parse("mailto:a.a@er.com"))
+            //Uri.parse("https://google.com"))
         }
         else if (b.getId() == R.id.b3 )
         {
@@ -70,22 +76,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if (b.getId() == R.id.b4 ) {
 
             //obre la llista de contactes per triar un.
-            Intent intent = new Intent(Intent.ACTION_PICK);
+         /*   Intent intent = new Intent(Intent.ACTION_PICK);
             intent.setType(ContactsContract.Contacts.CONTENT_TYPE);
             startActivity(intent);
-
+*/
             //Si volguessim recuperar un contacte que tingui correu electrònic
-/*
+
             Intent i = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Email.CONTENT_URI);
             startActivity(i);
-*/
+
         }
         else if (b.getId() == R.id.b5 ) {
-//busquem una imatge perquè la uri comença per image.
-// De fet només estem cridant al launcher i ell busca la manera d'obrir el uri
+        //busquem una imatge perquè la uri comença per image.
+        // De fet només estem cridant al launcher i ell busca la manera d'obrir el uri
                 mGetContent.launch("image/*");
-
-
 
         }
     }
